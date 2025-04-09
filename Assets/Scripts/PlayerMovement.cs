@@ -3,14 +3,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement Settings")] 
-    
     [SerializeField] [Range(5f, 10f)] private float speed = 6f;
-
     [SerializeField] [Range(1f, 6f)] private float jumpForce = 3f;
     [SerializeField] [Range(15f, 30f)] private float gravity = 20f;
 
-    [Header("Camera Settings")] [SerializeField]
-    private Transform cameraTransform;
+    [Header("Camera Settings")] 
+    [SerializeField] private Transform cameraTransform;
 
     private CharacterController _controller;
     private Vector3 _moveDirection = Vector3.zero;
